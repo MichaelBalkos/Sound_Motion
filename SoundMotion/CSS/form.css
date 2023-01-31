@@ -1,0 +1,101 @@
+
+
+
+
+
+
+.formTitle{
+	padding-left: 110px;	
+}
+
+.formSec{
+	font-family: 'Open Sans', sans-serif;	/*Imported font provided by google fonts*/
+	margin-top: 80px;
+}
+
+.formRow{
+	padding-left: 115px;
+	float: left;
+	margin-top: 20px;
+}
+
+.formWidth{
+	float: left;
+	width: 170px;	/*Allows for distance between text and textboxes/dropdown menus*/
+}
+
+.form_Fieldset{
+	margin: 0 auto 50px auto;	/* using a single margin tag to describe top, right, bottom and left sides of margin */ 
+	padding: 20px;
+	padding-top: 5px;
+	width: 800px;
+	box-shadow: 0 11px 20px -9px #333;	/*Shadow before hover*/
+	transition: all .15s ease-in-out;	/*Transition for the shadow*/
+	background-image: linear-gradient(#f2f2f2, #b3b3b3);	/*Gradient from 94% to 75% of black*/
+}
+
+.form_Fieldset:hover{
+box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.7);	/*Shadow after hover*/
+}
+
+
+
+.txtBox{				/*text box styling*/
+	margin-top:10px;
+	font-size: 14px;
+	font-family: arial, sans-serif;
+}
+
+
+
+
+ 
+
+
+.subBtn{
+	padding: 8px 18px 8px 18px;
+	font-size: 14px;
+	text-decoration: none;
+	color: white;
+	background-color: #58C3E0;
+	box-shadow: 0px 4px 0px 0px #089AC1;
+	float: right;
+    border-style: outset;
+    border-width: 2px;
+    border-color: #e6e6e6;
+}
+
+.subBtn:active {				/*when the button is pressed */
+	transform: translate(0px, 4px);
+	box-shadow: 0px 0px 0px 0px;
+}
+
+.subBtn:hover {				/*when the button has the mouse on it 'hovering' */
+	background-color: #7ed0e7;
+}
+
+
+
+
+/*  * *:hover { border:1px solid #89A81E }	*/		/*A useful piece of code to debug the positions of elements on a website */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,278 @@
+
+
+.displayProduct{
+	width: 100%;
+	Height: 605px;
+	background-color: white;
+	text-align:center;
+	display:inline-block;
+	margin-top: 90px;
+	margin-bottom: 125px;
+
+}
+
+.dImageBox{
+	width: 600px;
+	Height: 600px;
+	background-color: white;
+	display: inline-block;
+	overflow:hidden;
+	border: 1px solid #bfbfbf;
+	border-radius:5px;
+	vertical-align:top;
+	box-shadow: 0 11px 20px -9px #333;
+}
+
+
+.dImage{
+	width: 600px;
+	Height: 600px;
+	display:inline-block;
+	transition: transform .25s;	/*Transformation time*/
+	margin: 0 auto;
+	position:relative;
+}
+
+.dInfo{
+	width: 600px;
+	Height: 600px;
+	display:inline-block;
+	vertical-align:top;
+	border: 1px solid #bfbfbf;
+	border: 1px solid #bfbfbf;
+	border-radius:5px;
+	background-image: linear-gradient(#ffffff, #f2f2f2, #b3b3b3);	/*Gradient*/
+	box-shadow: 0 11px 20px -9px #333;
+}
+
+.dTitle{
+	width: 500px;
+	Height: 60px;
+	background-color: white;
+	margin-left:50px;
+	position: relative;
+}
+
+.dHeadTitle{
+	float: left;
+	margin-left: 20px;
+	font-size: 35px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	display:inline-block;
+}
+
+.dTitleBar{
+	margin-top: 5px;
+	width: 500px;
+	background-color: #222629;
+	height: 60px;
+	display:inline-block;
+	color: white;
+	font-family: 'IBM Plex Sans', sans-serif;
+	display:inline-block;
+	
+}
+
+.dBarHR{
+	margin-top: 60px;
+	z-index: 6px;
+    height: 6px;
+	border: 0px;
+	background-image: linear-gradient(to right, #58C3E0, #58C3E0, #58C3E0, #FFFFFF, #FFFFFF);	/* Gradient colour */
+}
+
+
+
+.displayTop{
+	width: 100%;
+	Height: 90px;
+	background-color: white;
+	text-align: center;
+	display: inline-block;
+}
+
+.dBodyTxt{
+	width: 500px;
+	Height: 240px;
+	margin-left:50px;
+	position:relative;
+	font-family: 'Open Sans', sans-serif;	/*Imported font provided by google fonts*/
+}
+
+.dDescriptionP{
+	float: left;
+	margin-top: 0px;
+	padding: 0px;
+	font-size: 18px;
+	text-align: left;
+}
+
+.dCartBtn{
+	margin-top: 20px;
+	width: 500px;
+	Height: 100px;
+	margin-left: 50px;
+	position: relative;
+}
+
+.dcartHR{
+	margin-bottom: 15px;
+}
+
+.dProdCaption{
+	width: 500px;
+	Height: 30px;
+	margin-left: 50px;
+	position: relative;
+	margin-top: 30px;
+	font-family: 'Open Sans', sans-serif;	/*Imported font provided by google fonts*/
+	color: #757575;
+	font-style: italic;
+	font-size: 14px;
+	overflow:hidden; /* Hides the overflow if the text in the div is too long. Good for 'caption' section.  */
+	
+}
+
+.dCaptionH1{
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+
+..dDescriptionHead{
+	width: 500px;
+	Height: 50px;
+	margin-left: 50px;
+	position: relative;
+	margin-top: 15px;
+	font-family: 'Open Sans', sans-serif;	/*Imported font provided by google fonts*/
+	color: #757575;
+	font-size: 14px;
+	display: inline-block;
+	
+	
+}
+
+.dDescription{
+	width: 500px;
+	position: relative;
+	display: inline-block;
+	margin-top: 15px;
+	
+}
+
+.dTitleP{
+	float:left;
+	font-family: 'Open Sans', sans-serif;	/*Imported font provided by google fonts*/
+	font-weight: 900;
+	font-size: 18px;
+	margin-bottom:0px;
+}
+
+.dHRDescription{
+	margin-top:50px;
+}
+
+.dCartBtn2{
+	width: 250px;
+	height: 60px;
+	float: right;
+	position: relative;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	vertical-align: bottom;
+}
+
+.dCartB{
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 22px;
+	text-decoration: none;
+	color: white;
+	background-color: #58C3E0;
+	box-shadow: 0px 7px 0px 0px #089AC1;
+	display: inline-block;
+	border-radius: 6px;
+	float: right;
+}
+
+.dCartB:active {
+  transform: translate(0px, 7px);
+  box-shadow: 0px 0px 0px 0px;
+}
+
+.dCartB:hover {
+  background-color: #7ed0e7;
+}
+
+.dZoom:hover {
+	-ms-transform: scale(1.10);	
+	-webkit-transform: scale(1.10);
+	transform: scale(1.10); 		/*Increases by 10% in size*/
+}
+
+.dZoom img {
+	width:100%;
+	height:100%;
+}
+
+.dProdPrice{				/*Price box*/
+	line-height: 40px;
+	width: 135px;
+	height: 50px;
+	margin-top: 0px;
+	padding-top: 10px;
+	float:left;
+	font-weight: 200;
+	border: 1px solid #1F1209;
+	text-align: center;
+	background-color: #fff;
+	border-radius:5px;
+	box-shadow: 0 3px 10px -3px #333; /*shadow under border for price of product*/
+	text-decoration: none;
+	margin-bottom: 0px;
+	font-family: 'Bangers', cursive;
+	font-size: 45px;
+}
+
+.dProdPrice:hover{
+	background-color: #FFFFFF;
+	color: #F9BF3B;
+	-moz-transition: all .2s ease-in; 		/*animation/transition support for other browsers*/
+	-o-transition: all .2s ease-in;			/*animation/transition support for other browsers*/
+	-webkit-transition: all .2s ease-in;	/*animation/transition support for other browsers*/
+	transition: all .2s ease-in;			/*colour changing animation/transition*/
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

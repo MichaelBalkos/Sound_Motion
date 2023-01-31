@@ -1,0 +1,55 @@
+
+footer {
+	text-decoration:none;
+	width: 100%;
+	background-color: #222629;
+	color: white;
+	text-align: center;
+	margin-top:50px;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-family: Trebuchet MS;
+	list-style-type: none;
+	left: 0;
+    bottom: 0;
+
+}
+
+.foot{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222629;
+	
+}
+.image {
+	width: 280px;
+	height: 50px;
+	
+}
+
+.footA{	/* Classes all 'a' tags in the navigation */
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 30px;
+	margin-top: 10px;
+    text-decoration: none;
+
+}
+
+.footList{			/* Makes the list Horizontal */
+	float: left;
+}
+
+.footListLogo{
+	float: left;
+	padding-left:27%;
+	padding-right:7%;
+	
+}
+
+.footA:hover {
+    text-decoration: underline;
+}

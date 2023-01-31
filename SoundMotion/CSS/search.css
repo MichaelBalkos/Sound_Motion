@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+
+
+
+.sResultBar{
+	width: auto;	/*auto width for different search results*/
+	background-color: #222629;
+	height: 60px;
+	display:inline-block;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	display:inline-block;
+	
+}
+
+
+.sH1{
+	float: left;
+	margin-left: 20px;
+	font-size: 20px;
+	margin-top: 17px;
+	margin-bottom: 0px;
+	display:inline-block;
+}
+
+.sSpace{
+	height: 500px;
+}
+
+.sSpacer2{
+	height: 100px;
+}

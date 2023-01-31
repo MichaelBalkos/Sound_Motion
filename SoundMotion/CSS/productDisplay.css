@@ -1,0 +1,254 @@
+
+
+
+/*CSS for the product boxes*/
+
+
+.allEnclosures{
+	width: 100%;
+	overflow: auto;					/* auto overflow automatically adjusts the height of the element */
+	background-color: white;
+	text-align:center;
+	display:inline-block;
+
+}
+
+
+.restrictedEnclosure{
+	width: 1650px;					/* Restricts only 4 enclosures to be displayed on each row */
+	overflow: auto;					/* auto overflow automatically adjusts the height of the element */
+	background-color: white;
+	text-align:center;
+	display:inline-block;
+}
+
+
+
+.enclosure{
+	width: 350px;
+	height: 550px;
+	border: 2px solid #bfbfbf;
+	background-image: linear-gradient(#ffffff, #ffffff, #ffffff, #ffffff, #bfbfbf);	/*Gradient*/
+	border-radius:20px;
+	box-shadow: 0 11px 20px -9px #333;
+	-moz-transition: all .2s ease-in;		/*animation/transition support for other browsers*/
+	-o-transition: all .2s ease-in;			/*animation/transition support for other browsers*/
+	-webkit-transition: all .2s ease-in;	/*animation/transition support for other browsers*/
+	transition: all .2s ease-in;			/*colour changing animation/transition*/
+	z-index: -1; 
+	display:inline-block;
+	overflow:hidden; /* cuts image inserted if it is larger than the border */
+	margin-top: 20px;
+	margin-left:11px;
+	margin-right:11px;
+	margin-bottom: 20px;
+}
+
+.enclosure:hover {
+	border: 2px solid #0b0d0e;
+	background-color: #FFFFFF;   
+}
+
+
+/*		Used when the background-colour of .enclosure:hover is set to a dark colour
+
+.enclosure:hover .head {
+color: #FFFFFF;
+
+}
+
+.enclosure:hover .productDesc {
+color: #FFFFFF;
+
+}
+
+
+*/
+
+
+
+/*Support for other browsers*/
+/*-webkit for Chrome, Safari; -moz for Firefox, -o for Opera -ms- for IE*/
+
+
+
+.zoom {
+	box-sizing: border-box;
+}
+
+.zoom {
+	background-color: #FFFFFF;	/*For testing purposes*/
+	transition: transform .25s;	/*Transformation time*/
+	width: 280px;
+	height: 280px;
+	margin: 0 auto;
+	position:relative;
+
+}
+
+.zoom:hover {
+	-ms-transform: scale(1.24);	
+	-webkit-transform: scale(1.24);
+	transform: scale(1.24); 		/*Increases by 24% in size*/
+}
+
+.zoom img {
+	width:100%;
+	height:100%;
+}
+
+
+
+.heading{
+	text-align: center;
+	width: 100%;
+	position:relative;	/*Allows z index to work as intended since not all positions support layering with z-index*/
+	margin-bottom:53px;
+}
+
+.enclosure a{
+	text-decoration: none;	/*Removes annoying colours and underlines on links*/
+}
+
+.head{
+	font-family: 'Open Sans', sans-serif;	/*Imported font provided by google fonts*/
+	font-size: 23px;
+	font-weight: 200;
+	color: #000000;
+	
+}
+
+.productDesc{
+		/*Higher than the image*/
+	position:relative;	/*Allows z index to work as intended since not all positions support layering with z-index*/
+	width: 90%;
+	height: 50px;
+	font-family: 'Open Sans', sans-serif;	/*Imported font provided by google fonts*/
+	margin:0 auto;	/*Centers the div for compatibility with different sized screens*/
+	color: #2C2C2C; 
+}
+
+.enclosure:hover .hrLine {
+	color: #089AC1;
+	background-color: #58C3E0;
+	box-shadow: 0 11px 20px -9px #333;
+	-moz-transition: all .2s ease-in; 		/*animation/transition support for other browsers*/
+	-o-transition: all .2s ease-in;			/*animation/transition support for other browsers*/
+	-webkit-transition: all .2s ease-in;	/*animation/transition support for other browsers*/
+	transition: all .2s ease-in;			/*colour changing animation/transition*/
+}
+
+.hrLine{				/*Line below the image, image when hovering over goes past the line as intended*/
+	position:relative;	
+	color: black;
+	height: 1px;
+	border-width: 0;
+	margin-top:20px;
+	margin-left:15px;
+	margin-right:15px;
+	border-bottom: 1px solid #1f1209;
+	box-shadow: 0 20px 20px -20px #333;
+}
+
+.prodPrice{				/*Price box*/
+	line-height: 40px;
+	width: 30%;
+	height: 40px;
+	position:relative;
+	margin-left: 25px;
+	margin-top:20px;
+	float:left;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+	border: 1px solid #1F1209;
+	text-align: center;
+	background-color: #fff;
+	border-radius:4px;
+	box-shadow: 0 3px 10px -3px #333; /*shadow under border for price of product*/
+	text-decoration: none;
+}
+
+.pPrice{		/*Price text*/
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1px;
+	font-family: 'Bangers', cursive;
+	text-decoration: none;
+	color: black;
+}
+
+.prodPrice:hover{
+	background-color: #FFFFFF;
+	color: #F9BF3B;
+	-moz-transition: all .2s ease-in; 		/*animation/transition support for other browsers*/
+	-o-transition: all .2s ease-in;			/*animation/transition support for other browsers*/
+	-webkit-transition: all .2s ease-in;	/*animation/transition support for other browsers*/
+	transition: all .2s ease-in;			/*colour changing animation/transition*/
+	text-decoration: none;
+}
+
+.enclosure:hover .prodPrice .pPrice{
+	background-color: #FFFFFF;
+	color: #F9BF3B;
+	-moz-transition: all .2s ease-in; 		/*animation/transition support for other browsers*/
+	-o-transition: all .2s ease-in;			/*animation/transition support for other browsers*/
+	-webkit-transition: all .2s ease-in;	/*animation/transition support for other browsers*/
+	transition: all .2s ease-in;			/*colour changing animation/transition*/
+}
+
+.prodCart{			/*Add To Cart button*/
+	width: 120px;
+	height: 40px;
+	position:relative;
+	margin-right: 25px;
+	margin-top:20px;
+	float:right;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+	text-align: center;
+}
+
+
+
+
+
+
+
+.prodDisplay_Close_A{
+	padding: 8px 15px 8px 15px;
+	font-size: 18px;
+	text-decoration: none;
+	color: white;
+	background-color: #58C3E0;
+	box-shadow: 0px 5px 0px 0px #089AC1;
+	border-radius: 6px;
+	float: right;
+
+}
+
+.prodDisplay_Close_A:active {				/*when the button is pressed */
+	transform: translate(0px, 5px);
+	box-shadow: 0px 0px 0px 0px;
+}
+
+.prodDisplay_Close_A:hover {				/*when the button has the mouse on it 'hovering' */
+	background-color: #7ed0e7;
+}
+
+
+
+
+/*  * *:hover { border:1px solid #89A81E }	*/		/*A useful piece of code to debug the positions of elements on a website */
+
+
+
+
+
+
+
+
+
+
+
+
+

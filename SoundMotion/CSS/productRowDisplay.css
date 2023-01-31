@@ -1,0 +1,220 @@
+
+
+/* * *:hover { border:1px solid #89A81E }    Places a border around all elements on page to easily view sizes of elements when building the site */
+
+
+
+
+.allRowEnclosures{
+	width: 100%;
+	overflow: auto;					/* auto overflow automatically adjusts the height of the element */
+	background-color: white;
+	text-align:center;
+	display:inline-block;
+
+}
+
+.restrictedRowEnclosure{
+	width: 1500px;					/* Restricts only 4 enclosures to be displayed on each row */
+	overflow: auto;					/* auto overflow automatically adjusts the height of the element */
+	background-color: white;
+	text-align:center;
+	display:inline-block;
+}
+
+.pR_title, .pR_Content {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+
+}
+
+.pR_Content {
+	table-layout: fixed;
+	width: 1500px;
+}
+
+.pRHR{
+	margin-top: 0px;
+	z-index: 6px;
+	height: 6px;
+	border: 0px;
+	background-image: linear-gradient(to right, #58C3E0, #58C3E0, #FFFFFF, #FFFFFF, #FFFFFF);	/* Gradient colour */
+}
+
+.pR_Img {
+	width: 100px;
+	height: 100px;
+
+}
+
+.pR_Content tr:hover {
+	background-image: linear-gradient(#f1f1f1, #f2f2f2, #f2f2f2, #f2f2f2, #d9d9d9, #bfbfbf);	/*Gradient background that is active on hover*/	/* 34% to 45% gradient shift (16.6% each #) */
+}		
+
+
+.pR_Content td {
+	border: 1px solid #6C6C6C;	/* left and right borders */
+	border-bottom: 2px solid #6C6C6C;	/* all bottom borders */
+	border-top: 2px solid #6C6C6C;		/*  first row top border */
+	height:105px;
+	padding: 0px;
+}
+
+
+/* Custom widths for the content table */
+
+.pR_Content td:nth-child(1) {	/* Selecting the 1th child element inside of td inside of pR_Content. */
+	width: 120px;
+}
+
+.pR_Content td:nth-child(2) {	/* Product Name */
+	width: 180px;
+}
+
+.pR_Content td:nth-child(3) {	/* Product Type */
+	width: 150px;
+}
+
+.pR_Content td:nth-child(4) {	/* Product Price */
+	width: 100px;
+}
+
+.pR_Content td:nth-child(5) {	/* Product Caption */
+	width: 240px;
+}
+
+.pR_Content td:nth-child(6) {	/* Product Description */
+	width: 380px;	
+}
+
+
+
+.pR_title th {
+	padding-bottom: 20px;
+	padding-top: 20px;
+	text-align:center;
+	background-color: #222629;
+	color: white;
+	border-left: 1px solid #6C6C6C;
+	border-right: 1px solid #6C6C6C;
+}
+
+/* Custom widths for the title table */
+
+.pR_title th:nth-child(1) {	/* Selecting the 1th child element inside of td inside of pR_Content. */
+	width: 120px;
+}
+
+.pR_title th:nth-child(2) {	/* Product Name */
+	width: 179px;
+}
+
+.pR_title th:nth-child(3) {	/* Product Type */
+	width: 149px;
+}
+
+.pR_title th:nth-child(4) {	/* Product Price */
+	width: 98px;
+}
+
+.pR_title th:nth-child(5) {	/* Product Caption */
+	width: 239px;
+}
+
+.pR_title th:nth-child(6) {	/* Product Description */
+	width: 380px;	
+}
+
+.pR_title th:nth-child(7) {	/* U & D hyperlinks title */
+	width: 322px;;	
+}
+
+
+
+
+.pR_Textarea {
+	resize: none;	/*stops the ability to resize the textarea */
+	border: none;
+	background: transparent;
+	font-family: Verdana,sans-serif;
+	font-size: 12px;
+	overflow: hidden;	/* hides scroll bar as overflow is hidden, makes it look cleaner */
+
+}
+
+.pR_Textarea:hover {	/* provides functionality back once hovering on desired textarea (such as a scroll bar) */
+	background-color: white;	/* overwrites the hover on the row to white */
+	border: 1px solid #6C6C6C;
+	overflow: visible;			/* scrollbar*/
+}
+
+
+
+/*Buttons using transformations and box-shadows to give a click effect*/
+
+.pD_Buttons{
+	width: 322px;
+	height: 50px;
+	float: right;
+	position: relative;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	vertical-align: bottom;
+	
+}
+
+.pD_Update_A{
+	padding: 10px 25px 10px 25px;
+	font-size: 16px;
+	text-decoration: none;
+	color: white;
+	background-color: #58C3E0;
+	box-shadow: 0px 5px 0px 0px #089AC1;
+	border-radius: 6px;
+	float: left;
+	margin-left: 50px;
+}
+
+.pD_Update_A:active {				/*when the button is pressed */
+	transform: translate(0px, 5px);
+	box-shadow: 0px 0px 0px 0px;
+}
+
+.pD_Update_A:hover {				/*when the button has the mouse on it 'hovering' */
+	background-color: #7ed0e7;
+}
+
+.pD_Delete_A{
+	padding: 10px 27px 10px 27px;	/* Combined all padding directions into a single line */
+	font-size: 16px;
+	text-decoration: none;
+	color: white;
+	background-color: #ff8566;
+	box-shadow: 0px 5px 0px 0px #cc2900;
+	border-radius: 6px;
+	float: right;
+	margin-right: 50px;
+}
+
+.pD_Delete_A:active {
+	transform: translate(0px, 5px);	/*animation when btn is pressed */
+	box-shadow: 0px 0px 0px 0px;	/*animation when btn is pressed */
+}
+
+.pD_Delete_A:hover {
+	background-color: #ffad99;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

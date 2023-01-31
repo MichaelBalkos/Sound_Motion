@@ -1,0 +1,244 @@
+
+
+
+
+/* Regular login users code */
+
+
+
+body {margin:0;}
+
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222629;
+    position: fixed;
+    top: 0;
+    width: 100%;
+	font-family: Trebuchet MS;
+	box-shadow: 0 5px 5px -5px #333;	/* Shadow under the fixed nav bar */
+	z-index: 5; 
+}
+
+.navList{
+	float: left;
+	margin-left:2px;
+	margin-right:2px;
+	z-index: 5; 
+}
+
+.navListA{	/* Classes all 'a' tags in the navigation */
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 30px;
+	margin-top: 10px;
+    text-decoration: none;
+	z-index: 5; 
+}
+
+.navListA:hover {				/* Changing the whole navigation sections colour while hovering over text */
+    border: 1px solid #58C3E0;	/* Border of button */
+    background-color: #222629;	/* Inside button colour */
+    color:#fff;					/* font colour */
+  	font-family: Trebuchet MS;	/* text font */
+	margin-left:-1px;
+	margin-right:-1px;
+	z-index: 5; 
+}
+
+.navListLogo{
+	float: left;
+	padding-left:18%;
+	padding-right:21.5%;
+	z-index: 5; 
+}
+
+#logo{
+	height:58px;	/*Limits the height of the logo, which also affects the width */
+	z-index: 5; 
+}
+
+#cartNav{
+	height: 20px;
+	z-index: 5;
+	padding-bottom: -20px;
+}
+
+.navListB{	/* Classes all 'a' tags in the navigation */
+	display: block;
+    color: white;
+    text-align: center;
+	margin-top: 10px;
+    text-decoration: none;
+	z-index: 5; 
+	padding-bottom: 5px;
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.navListB:hover {				/* Changing the whole navigation sections colour while hovering over text */
+    border: 1px solid #58C3E0;	/* Border of button */
+    background-color: #222629;	/* Inside button colour */
+    color:#fff;					/* font colour */
+  	font-family: Trebuchet MS;	/* text font */
+	margin-left:-1px;
+	margin-right:-1px;
+	z-index: 5; 
+}
+
+
+
+/* Nav buttons */
+.active {
+    border: 1px solid #58C3E0;	/* Border of button */
+    background-color: #222629;	/* Inside button colour */
+    color:#fff;					/* font colour */
+  	font-family: Trebuchet MS;	/* text font */
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+.active:active {
+    border: 1px solid #58C3E0;	/* Border of button */
+    background-color: #222629;	/* Inside button colour */
+    color:#fff;					/* font colour */
+  	font-family: Trebuchet MS;	/* text font */
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+.active:hover{
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+.searchBar{
+	height: 41px;
+	width: 130px;
+    box-sizing: border-box;
+    border: 1px solid #58C3E0;
+    font-size: 16px;
+	color:#fff;
+	margin-top: 10px;
+	font-family: Trebuchet MS;
+    background-color: #222629;
+    padding: 12px 20px 12px 10px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.searchBar:focus {
+    width: 270px;
+}
+
+.searchBar:hover{
+	border: 1px solid #58C3E0;
+    background-color: #222629;
+    color:#fff;
+  	font-family: Trebuchet MS;
+}
+
+
+.searchBar:focus {	/*Removes blue border when clicking on the element*/
+    outline-width: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Admin and users CSS*/
+
+
+
+.Admin_navListLogo{
+	float: left;
+	padding-left:14%;	/*Admin has a manage button so everything is moved a tad over*/
+	padding-right:5%;	/*Admin has a manage button so everything is moved a tad over*/
+	z-index: 5; 
+}
+
+
+
+
+.Admin_navList{
+	float: left;
+	margin-left:2px;
+	margin-right:2px;
+	z-index: 5; 
+	margin-right: 45px;
+}
+
+
+
+.Admin_navListA{	/* Classes all 'a' tags in the navigation */
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 30px;
+	margin-top: 10px;
+    text-decoration: none;
+	z-index: 5; 
+}
+
+.Admin_navListA:hover {				/* Changing the whole navigation sections colour while hovering over text */
+text-decoration: underline;
+}
+
+
+
+/*User CSS*/
+
+.User_navListLogo{
+	float: left;
+	padding-left:16%;		/*User has no manage button so everything is moved a tad over*/
+	padding-right:8%;		/*User has no manage button so everything is moved a tad over*/
+	z-index: 5; 
+}
+
+
+
+
+.User_navList{
+	float: left;
+	margin-left:2px;
+	margin-right:2px;
+	z-index: 5; 
+	margin-right: 45px;
+}
+
+
+
+.User_navListA{	/* Classes all 'a' tags in the navigation */
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 30px;
+	margin-top: 10px;
+    text-decoration: none;
+	z-index: 5; 
+}
+
+.User_navListA:hover {				/* Changing the whole navigation sections colour while hovering over text */
+text-decoration: underline;
+}
+
+

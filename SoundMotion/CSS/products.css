@@ -1,0 +1,95 @@
+
+
+
+.pHeadphones{
+	width: 100%;
+	overflow: auto;					/* auto overflow automatically adjusts the height of the element */
+	background-color: white;
+	text-align:center;
+	display:inline-block;
+	margin-top: 80px;
+
+}
+
+.PEarphones{
+	width: 100%;
+	overflow: auto;					/* auto overflow automatically adjusts the height of the element */
+	background-color: white;
+	text-align:center;
+	display:inline-block;
+	margin-top: 120px;
+
+}
+
+.PSpeaker{
+	width: 100%;
+	overflow: auto;					/* auto overflow automatically adjusts the height of the element */
+	background-color: white;
+	text-align:center;
+	display:inline-block;
+	margin-top: 120px;
+
+}
+
+.PREnclosure{
+	width: 1650px;					/* Restricts only 4 enclosures to be displayed on each row */
+	overflow: auto;					/* auto overflow automatically adjusts the height of the element */
+	background-color: white;
+	text-align:center;
+	display:inline-block;
+}
+
+
+.pHBar{
+	width: 1500px;
+	background-color: #222629;
+	height: 70px;
+	display:inline-block;
+	color: white;
+	font-family: 'IBM Plex Sans', sans-serif;
+	display:inline-block;
+	
+}
+
+.pH1{
+	float: left;
+	margin-left: 20px;
+	font-size: 35px;
+	margin-top: 17px;
+	margin-bottom: 0px;
+	display:inline-block;
+}
+
+.pHR{
+	margin-top: 65px;
+	z-index: 6px;
+    height: 6px;
+	border: 0px;
+	background-image: linear-gradient(to right, #58C3E0, #58C3E0, #FFFFFF, #FFFFFF, #FFFFFF);	/* Gradient colour */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

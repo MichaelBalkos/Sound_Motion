@@ -1,0 +1,526 @@
+
+
+
+/* delete_confirm.php CSS here, delete.php CSS below this */
+
+
+
+/* The background (background) */
+.d_Background {
+   	background-color: rgba(119, 119, 136,0.8);	/*opacity without child element being translucent */
+    /* display: none; Hides this element and its children elements on load */	/*Property on this selector is redundant after other changes, keeping for documentation */
+	position: fixed;
+	left: 0;	/* horizontal position relative to the webpage */
+	top: 0;		/* vertical position relative to the webpage */
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Hides the scrollbar if text overflow is present*/
+	cursor: alias;
+	z-index: 7px;	/* Higher index than everything except the navigation bar */
+}
+
+/* content_box */
+.d_Content_Box {
+    
+	margin: 6% auto 6% auto; /* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 1000px; /* Could be more or less, depending on screen size */
+	height: 600px;	
+	cursor: default;
+}
+
+/* form border */
+.delete_Fieldset {
+	padding: 0px;
+	margin: 0px;
+	width: 1000px;
+	box-shadow: 0 11px 20px -9px #333;	/*Shadow before hover*/
+	transition: all .15s ease-in-out;	/*Transition for the shadow*/
+	background-image: linear-gradient(#ffffff, #ffffff, #ffffff, #b3b3b3);	/*Gradient from 94% to 75% of black*/
+	height: 600px;
+	padding-left: 2px;
+}
+
+
+
+
+
+
+
+/* Copied from display.css and modified to suit preview before deletion */
+
+
+.DC_displayProduct{
+	width: 100%;
+	Height: 405px;
+	text-align:center;
+	display:inline-block;
+	margin-top: 0px;
+	margin-bottom: 20px;
+
+}
+
+.DC_dImageBox{
+	width: 400px;
+	Height: 400px;
+	background-color: white;
+	display: inline-block;
+	overflow:hidden;
+	border: 1px solid #bfbfbf;
+	border-radius:5px;
+	vertical-align:top;
+	box-shadow: 0 11px 20px -9px #333;
+}
+
+
+.DC_dImage{
+	width: 400px;
+	Height: 400px;
+	display:inline-block;
+	transition: transform .25s;	/*Transformation time*/
+	margin: 0 auto;
+	position:relative;
+}
+
+.DC_dInfo{
+	width: 400px;
+	Height: 400px;
+	display:inline-block;
+	vertical-align:top;
+	border: 1px solid #bfbfbf;
+	border: 1px solid #bfbfbf;
+	border-radius:5px;
+	background-image: linear-gradient(#ffffff, #ffffff, #f2f2f2, #f2f2f2, #b3b3b3);	/*Gradient changed as smaller height resulted in darked overall gradient*/
+	box-shadow: 0 11px 20px -9px #333;
+}
+
+.DC_dTitle{
+	width: 300px;
+	Height: 40px;				/* caption hight from the title */
+	background-color: white;
+	margin-left:50px;
+	position: relative;
+}
+
+.DC_dHeadTitle{
+	float: left;
+	margin-left: 20px;
+	font-size: 21px;
+	margin-top: 8px;
+	margin-bottom: 0px;
+	display:inline-block;
+}
+
+.DC_dTitleBar{
+	margin-top: 5px;
+	width: 280px;
+	background-color: #222629;
+	height: 45px;
+	display:inline-block;
+	color: white;
+	font-family: 'IBM Plex Sans', sans-serif;
+	display:inline-block;
+	
+}
+
+.DC_dBarHR{
+	margin-top: 45px;
+	z-index: 6px;
+    height: 6px;
+	border: 0px;
+	background-image: linear-gradient(to right, #58C3E0, #58C3E0, #FFFFFF, #FFFFFF);	/* Gradient colour */
+}
+
+
+
+.DC_displayTop{
+	width: 100%;
+	Height: 90px;
+	background-color: white;
+	text-align: center;
+	display: inline-block;
+}
+
+.DC_dBodyTxt{
+	width: 300px;
+	Height: 100px;
+	margin-left:50px;
+	position:relative;
+	font-family: 'Open Sans', sans-serif;	/*Imported font provided by google fonts*/
+}
+
+.DC_dDescriptionP{
+	float: left;
+	margin-top: 0px;
+	padding: 0px;
+	font-size: 11px;
+	text-align: left;
+}
+
+.DC_dCartBtn{
+	margin-top: 20px;
+	width: 300px;
+	Height: 50px;
+	margin-left: 50px;
+	position: relative;
+}
+
+.DC_dcartHR{
+	margin-bottom: 15px;
+}
+
+.DC_dProdCaption{
+	width: 500px;
+	Height: 25px;
+	margin-left: 50px;
+	position: relative;
+	margin-top: 30px;
+	font-family: 'Open Sans', sans-serif;	/*Imported font provided by google fonts*/
+	color: #757575;
+	font-style: italic;
+	font-size: 14px;
+	overflow:hidden; /* Hides the overflow if the text in the div is too long. Good for 'caption' section.  */
+	
+}
+
+.DC_dCaptionH1{
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	font-size: 10px;
+}
+
+.DC_dDescriptionHead{
+	width: 300px;
+	Height: 50px;
+	margin-left: 0px;
+	position: relative;
+	margin-top: 15px;
+	font-family: 'Open Sans', sans-serif;	/*Imported font provided by google fonts*/
+	color: #757575;
+	font-size: 14px;
+	display: inline-block;
+	
+	
+}
+
+.DC_dDescription{
+	width: 300px;
+	position: relative;
+	display: inline-block;
+	margin-top: 15px;
+	
+}
+
+.DC_dTitleP{
+	float:left;
+	font-family: 'Open Sans', sans-serif;	/*Imported font provided by google fonts*/
+	font-weight: 900;
+	font-size: 14px;
+	margin-bottom:0px;
+}
+
+.DC_dHRDescription{
+	margin-top:40px;
+}
+
+.DC_dCartBtn2{
+	width: 150px;
+	height: 30px;
+	float: right;
+	position: relative;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	vertical-align: bottom;
+}
+
+.DC_dCartB{
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 16px;
+	text-decoration: none;
+	color: white;
+	background-color: #58C3E0;
+	box-shadow: 0px 5px 0px 0px #089AC1;
+	display: inline-block;
+	border-radius: 6px;
+	float: right;
+}
+
+.DC_dCartB:active {
+	transform: translate(0px, 5px);
+	box-shadow: 0px 0px 0px 0px;
+}
+
+.DC_dCartB:hover {
+	background-color: #7ed0e7;
+}
+
+.DC_dZoom:hover {
+	-ms-transform: scale(1.10);	
+	-webkit-transform: scale(1.10);
+	transform: scale(1.10); 		/*Increases by 10% in size*/
+}
+
+.DC_dZoom img {
+	width:100%;
+	height:100%;
+}
+
+.DC_dProdPrice{				/*Price box*/
+	line-height: 30px;
+	width: 95px;
+	height: 30px;
+	margin-top: 0px;
+	padding-top: 6px;
+	padding-bottom: 3px;
+	float:left;
+	font-weight: 200;
+	border: 1px solid #1F1209;
+	text-align: center;
+	background-color: #fff;
+	border-radius:5px;
+	box-shadow: 0 3px 10px -3px #333; /*shadow under border for price of product*/
+	text-decoration: none;
+	margin-bottom: 0px;
+	font-family: 'Bangers', cursive;
+	font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* Title styling section */
+
+
+.DC_TitleDelete{
+	width: 100%;
+	Height: 40px;
+	text-align:center;
+	display:inline-block;
+	margin-top: 20px;
+	margin-bottom: 10px;
+
+}
+
+.DC_TitleP{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+	margin: 0px;
+	font-weight: bold
+}
+
+
+
+
+
+
+
+/* buttons styling section */
+
+
+.DC_Buttons{
+	width: 100%;
+	Height: 80px;
+	text-align:center;
+	display:inline-block;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+
+.DC_Back_A{
+	padding: 15px 92px 15px 92px;
+	font-size: 25px;
+	text-decoration: none;
+	color: white;
+	background-color: #58C3E0;
+	box-shadow: 0px 5px 0px 0px #089AC1;
+	border-radius: 6px;
+	float: left;
+	margin-left: 255px;
+}
+
+.DC_Back_A:active {				/*when the button is pressed */
+	transform: translate(0px, 5px);
+	box-shadow: 0px 0px 0px 0px;
+}
+
+.DC_Back_A:hover {				/*when the button has the mouse on it 'hovering' */
+	background-color: #7ed0e7;
+}
+
+.DC_RealDelete_A{
+	padding: 15px 40px 15px 40px;	/* Combined all padding directions into a single line */
+	font-size: 25px;
+	text-decoration: none;
+	color: white;
+	background-color: #ff8566;
+	box-shadow: 0px 5px 0px 0px #cc2900;
+	border-radius: 6px;
+	float: right;
+	margin-right: 255px;
+}
+
+.DC_RealDelete_A:active {
+	transform: translate(0px, 5px);
+	box-shadow: 0px 0px 0px 0px;
+}
+
+.DC_RealDelete_A:hover {
+	background-color: #ffad99;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* delete.php CSS here */
+
+
+
+
+/* The background (background) */
+.Rd_Background {
+   	background-color: rgba(119, 119, 136,0.8);	/*opacity without child element being translucent */
+    /* display: none; Hides this element and its children elements on load */
+	position: fixed;
+	left: 0;	/* horizontal position relative to the webpage */
+	top: 0;		/* vertical position relative to the webpage */
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Hides the scrollbar if text overflow is present*/
+	cursor: alias;
+	z-index: 7px;	/* Higher index than everything except the navigation bar */
+}
+
+/* content_box */
+.Rd_Content_Box {
+    
+	margin: 6% auto 6% auto; /* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 1000px; /* Could be more or less, depending on screen size */
+	height: 300px;	
+	cursor: default;
+	
+}
+
+.Rd_delete_Fieldset {
+	padding: 0px;
+	margin: 0px;
+	width: 1000px;
+	box-shadow: 0 11px 20px -9px #333;	/*Shadow before hover*/
+	transition: all .15s ease-in-out;	/*Transition for the shadow*/
+	background-image: linear-gradient(#ffffff, #ffffff, #b3b3b3);	/*Gradient from 94% to 75% of black*/
+	height: 300px;
+	padding-left: 2px;
+}
+
+
+
+
+
+.Rd_TitleDelete{
+	width: 100%;
+	Height: 40px;
+	text-align:center;
+	display:inline-block;
+	margin-top: 80px;
+	margin-bottom: 10px;
+
+}
+
+.Rd_TitleP{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+	margin: 0px;
+	font-weight: bold
+}
+
+
+
+/* button styling section */
+
+
+.Rd_Button{
+	width: 100%;
+	Height: 80px;
+	text-align:center;
+	display:inline-block;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+
+.RD_Close_A{
+	padding: 15px 87px 15px 87px;
+	font-size: 25px;
+	text-decoration: none;
+	color: white;
+	background-color: #58C3E0;
+	box-shadow: 0px 5px 0px 0px #089AC1;
+	border-radius: 6px;
+	float: left;
+	margin-left: 377px;	/* button length - 100% width in px / 2 */
+}
+
+.RD_Close_A:active {				/*when the button is pressed */
+	transform: translate(0px, 5px);
+	box-shadow: 0px 0px 0px 0px;
+}
+
+.RD_Close_A:hover {				/*when the button has the mouse on it 'hovering' */
+	background-color: #7ed0e7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

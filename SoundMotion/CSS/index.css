@@ -1,0 +1,59 @@
+
+
+
+/*CSS for the index.php page*/
+
+
+/*Banner*/
+
+.shadow{			/* Div with width 100% */
+	width: 100%;
+	Height: 415px;
+	background-color: white;			/* Added here for testing purposes. Eg. To see the size of the div boxes.  */
+	text-align:center;
+	display:inline-block;
+	margin-top: 80px;
+	
+}
+
+.banner{			/* Div containing image with shadow effect */
+	box-shadow: 0 11px 20px -9px #333;
+	background-color: white;			/* Added here for testing purposes. Eg. To see the size of the div boxes.  */
+	width: 1500px;
+	Height: 400px;
+	display:inline-block;
+	text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

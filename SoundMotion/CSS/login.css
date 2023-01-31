@@ -1,0 +1,218 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Login form section*/
+
+.Login_Form {
+	font-family: 'Open Sans', sans-serif;	/*Imported font provided by google fonts*/
+	margin-top: 130px;
+}
+
+.Login_Text {
+	text-align: center;
+	width: 100%;
+	position:relative;	/*Allows z index to work as intended since not all positions support layering with z-index*/
+	margin-top: 2px;
+}
+
+.Login_Btn_Box {
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	margin-top: 30px;
+}
+
+.Login_Btn {
+	padding: 11px 130px 11px 130px;
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+	background-color: #58C3E0;
+	box-shadow: 0px 4px 0px 0px #089AC1;
+    border-style: outset;
+    border-width: 2px;
+    border-color: #e6e6e6;
+}
+
+.Login_Btn:active {				/*when the button is pressed */
+	transform: translate(0px, 4px);
+	box-shadow: 0px 0px 0px 0px;
+}
+
+.Login_Btn:hover {				/*when the button has the mouse on it 'hovering' */
+	background-color: #7ed0e7;
+}
+
+
+.Login_Content{
+	margin: 0 auto 50px auto;	/* using a single margin tag to describe top, right, bottom and left sides of margin */ 
+	padding: 20px;
+	padding-top: 5px;
+	width: 800px;
+	box-shadow: 0 11px 20px -9px #333;	/*Shadow before hover*/
+	transition: all .15s ease-in-out;	/*Transition for the shadow*/
+	background-image: linear-gradient(#f2f2f2, #b3b3b3);	/*Gradient from 94% to 75% of black*/
+}
+
+.Login_Title {
+	text-align: center;
+	
+}
+
+
+.Login_Input_Fields {
+	width: 330px;
+	height: 30px;
+	margin-top:10px;
+	font-size: 14px;
+	font-family: arial, sans-serif;
+	border-radius: 3px;
+	border: 1px solid #737373;
+	box-shadow: inset 0 2px 5px rgba(0,0,0,0.25);
+}
+
+.Login_New_User {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	
+}
+
+.L_Not_Member {
+	width: 200px;
+	float: left;
+	text-align: center;
+	margin-left: 230px;
+}
+
+.Login_Sign_Up {
+	width: 100px;
+	float: left;
+	text-align: center;
+	color: #1868CC;
+	text-align: left;
+}
+
+.Login_Sign_Up:hover {
+	color: #ff944d;
+}
+
+
+
+
+
+
+
+/*  * *:hover { border:1px solid #89A81E }	*/		/*A useful piece of code to debug the positions of elements on a website */
+
+
+
+
+
+
+
+
+
+
+/*Error password section*/
+
+
+
+.EL_Login_Content{
+	margin: 0 auto 50px auto;	/* using a single margin tag to describe top, right, bottom and left sides of margin */ 
+	padding: 10px;
+	width: 800px;
+	box-shadow: 0 11px 20px -9px #333;	/*Shadow before hover*/
+	transition: all .15s ease-in-out;	/*Transition for the shadow*/
+	background-image: linear-gradient(#f2f2f2, #b3b3b3, #b3b3b3);	/*Gradient from 94% to 75% of black*/
+}
+
+
+.EL_Login_Title {
+	text-align: center;
+	Margin-bottom: 40px;
+	Margin-top: 30px;
+	margin-left: 80px;
+}
+
+.EL_Login_Btn_Box {
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.EL_Login_Form {
+	font-family: 'Open Sans', sans-serif;	/*Imported font provided by google fonts*/
+	margin-top: 10px;
+}
+
+.Try_Again_Login {
+	text-align: center;
+	Margin-bottom: 30px;
+	
+}
+
+
+
+.EL_Dismiss_Btn {
+	padding: 2px 5px 5px 2px;
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+	background-color: #ff8566;
+	box-shadow: 0px 4px 0px 0px #cc2900;
+    border-style: outset;
+    border-width: 2px;
+    border-color: #e6e6e6;
+	margin-left: 10px;
+	width: 80px;
+	height: 30px;
+	float: right;
+	z-index: 10px;
+}
+
+.EL_Dismiss_Btn:active {				/*when the button is pressed */
+	transform: translate(0px, 4px);
+	box-shadow: 0px 0px 0px 0px;
+	z-index: 10px;
+}
+
+.EL_Dismiss_Btn:hover {				/*when the button has the mouse on it 'hovering' */
+	background-color: #ffad99;
+	z-index: 10px;
+	cursor: default;
+}
+
+.EL_Dismiss_P {
+text-align: center;
+font-size: 14px;
+margin-top: 5px;
+margn-bottom: 0px;
+}
+
+
+
+
+
+
+
